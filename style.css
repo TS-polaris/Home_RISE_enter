@@ -2515,3 +2515,49 @@ header {
         font-size: 1.2rem;
     }
 }
+/* ---------------------------------------------------- */
+/* UPDATED CHATBOT & HEADER BUTTON STYLES (User Request) */
+/* ---------------------------------------------------- */
+
+/* Override Chatbot Button Style: Deep Purple, White Text */
+.btn-chatbot {
+    background-color: #4527a0 !important;
+    /* Deep Purple */
+    color: white !important;
+    border: none !important;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-weight: 700 !important;
+}
+
+.btn-chatbot:hover {
+    background-color: #5e35b1 !important;
+    /* Lighter Purple */
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(69, 39, 160, 0.3) !important;
+}
+
+/* Header Button Specific Tweaks: Reduce width by ~40% */
+/* Current padding is ~0.9rem 2rem. Target ~0.7rem 1.2rem */
+header .btn {
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem !important;
+}
+
+/* Update Mobile Query to handle new button styles (Optional cleanup) */
+@media (max-width: 400px) {
+    .btn-chatbot {
+        padding: 0.6rem !important;
+        font-size: 0 !important;
+        /* Hide text on super small screens */
+    }
+
+    .btn-chatbot::before {
+        content: '💬';
+        font-size: 1.2rem;
+    }
+}
