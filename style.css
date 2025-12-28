@@ -2481,4 +2481,37 @@ header {
         overflow: visible;
         /* Don't cut off text */
     }
+}/* Chatbot Button Style */
+.btn-chatbot {
+    background-color: #e3f2fd;
+    /* Light Blue */
+    color: #003366;
+    /* Navy Text */
+    border: 1px solid #bbdefb;
+    margin-right: 0.5rem;
+    /* Spacing with Apply button */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 600;
+}
+
+.btn-chatbot:hover {
+    background-color: #bbdefb;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide text on very small screens if needed, or adjust padding */
+@media (max-width: 400px) {
+    .btn-chatbot {
+        padding: 0.6rem;
+        font-size: 0;
+        /* Hide text */
+    }
+
+    .btn-chatbot::before {
+        content: '🤖';
+        font-size: 1.2rem;
+    }
 }
