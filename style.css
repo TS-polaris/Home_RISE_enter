@@ -2561,3 +2561,76 @@ header .btn {
         font-size: 1.2rem;
     }
 }
+/* Footer Layout Fix for Curriculum Page */
+.footer-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+}
+
+.footer-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-partners {
+    display: flex !important;
+    gap: 3rem !important;
+}
+
+.partner-group h5 {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.partner-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partner-list li {
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+
+    .footer-partners {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem !important;
+        width: 100%;
+    }
+}
+/* Kakao Open Chat Button (Purple Variation as requested) */
+.btn-kakao {
+    background-color: #9C27B0 !important;
+    /* Lighter Purple / Magenta-ish */
+    color: white !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-kakao:hover {
+    background-color: #BA68C8 !important;
+    /* Lighter on hover */
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4) !important;
+}

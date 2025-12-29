@@ -55,8 +55,7 @@
             </nav>
             <a href="https://chatgpt.com/g/g-6950d84744ac8191a43ac532eeb1edd6-rise-seumateumobilriti-gungdeumjeung-haegyeol-doumi"
                 target="_blank" class="btn btn-chatbot">문의챗봇</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7nvuNg55kswjKw_JJ2xJqDoPdF7SxMK5dR34nyR0hVAlvhg/viewform"
-                target="_blank" class="btn btn-primary">신청하기</a>
+            <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank" class="btn btn-primary">신청하기</a>
         </div>
     </header>
 
@@ -439,8 +438,7 @@
 
         <!-- 4. CTA -->
         <div style="text-align: center; margin-top: 5rem;">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7nvuNg55kswjKw_JJ2xJqDoPdF7SxMK5dR34nyR0hVAlvhg/viewform"
-                target="_blank" class="btn btn-cta">1분이면 지원 가능합니다</a>
+            <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank" class="btn btn-cta">1분이면 지원 가능합니다</a>
         </div>
 
         </div>
@@ -451,17 +449,20 @@
         <div class="container footer-container">
             <div class="footer-info">
                 <h4 style="color: white; margin-bottom: 1rem;">충남RISE 공유대학 스마트모빌리티 융합전공</h4>
-                <p>주소 : 충남 공주시 공주대로 56 공주대학교 천안공과대학</p>
+                <p>주소 : 충남 공주시 공주대학로 56 공주대학교 천안공과대학</p>
                 <div style="margin-top: 1rem; display: flex; gap: 1rem; align-items: flex-start;">
                     <span
                         style="background:rgba(255,255,255,0.15); color: #ddd; padding:0.2rem 0.8rem; border-radius:4px; font-weight:600; white-space: nowrap;">문의처</span>
                     <div style="text-align: left;">
                         <p style="margin: 0 0 0.3rem 0;">융합전공 연구교수 : 041-521-9912</p>
-                        <p style="margin: 0;">공유대학 총괄본부 : 041-521-9917</p>
-                        <p style="margin: 0.5rem 0 0 0;"><a
-                                href="https://chatgpt.com/g/g-6950d84744ac8191a43ac532eeb1edd6-rise-seumateumobilriti-gungdeumjeung-haegyeol-doumi"
+                        <p style="margin: 0;">융합전공 담당자 : 041-521-9917</p>
+                        <div style="margin: 0.5rem 0 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <a href="https://chatgpt.com/g/g-6950d84744ac8191a43ac532eeb1edd6-rise-seumateumobilriti-gungdeumjeung-haegyeol-doumi"
                                 target="_blank" class="btn btn-chatbot"
-                                style="font-size: 0.9rem; padding: 0.5rem 1rem;">문의챗봇</a></p>
+                                style="font-size: 0.9rem; padding: 0.5rem 1rem;">문의챗봇</a>
+                            <a href="https://open.kakao.com/o/gPARyN4h" target="_blank" class="btn btn-kakao">💬 카카오
+                                오픈채팅방</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -483,15 +484,32 @@
                         <li>충청남도</li>
                         <li>충남RISE 공유대학</li>
                     </ul>
-                </div> <!-- End track-grid -->
-                <div class="scroll-indicators"></div> <!-- Dots Container -->
+                </div>
             </div>
-            <div class="container copyright"
-                style="border-top: 1px solid #333; margin-top: 2rem; padding-top: 1rem; text-align: center;">
-                <p>© 2026 충남RISE 공유대학 스마트모빌리티융합전공. All rights reserved.</p>
-            </div>
+        </div>
+        <div class="container copyright"
+            style="border-top: 1px solid #333; margin-top: 2rem; padding-top: 1rem; text-align: center;">
+            <p>© 2026 충남RISE 공유대학 스마트모빌리티융합전공. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        // Simple FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            })
+        });
+        // Initialize FAQs to contain hidden answers (unlike CSS default for print visualization)
+        document.querySelectorAll('.faq-answer').forEach(item => {
+            item.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
