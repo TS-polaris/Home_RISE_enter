@@ -2481,7 +2481,9 @@ header {
         overflow: visible;
         /* Don't cut off text */
     }
-}/* Chatbot Button Style */
+}
+
+/* Chatbot Button Style */
 .btn-chatbot {
     background-color: #e3f2fd;
     /* Light Blue */
@@ -2515,6 +2517,7 @@ header {
         font-size: 1.2rem;
     }
 }
+
 /* ---------------------------------------------------- */
 /* UPDATED CHATBOT & HEADER BUTTON STYLES (User Request) */
 /* ---------------------------------------------------- */
@@ -2561,6 +2564,7 @@ header .btn {
         font-size: 1.2rem;
     }
 }
+
 /* Footer Layout Fix for Curriculum Page */
 .footer-container {
     display: flex !important;
@@ -2609,6 +2613,7 @@ header .btn {
         width: 100%;
     }
 }
+
 /* Kakao Open Chat Button (Purple Variation as requested) */
 .btn-kakao {
     background-color: #9C27B0 !important;
@@ -2633,4 +2638,198 @@ header .btn {
     color: white !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4) !important;
+}
+
+/* Header Button Group & Kakao Button (Yellow) */
+.header-btn-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-kakao-head {
+    background-color: #FEE500;
+    color: #3C1E1E;
+    padding: 0.3rem 1.0rem;
+    font-size: 0.65rem;
+    /* Reduced by ~25-30% from 0.85rem */
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 30px;
+    text-align: left;
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+    height: fit-content;
+    align-self: center;
+}
+
+.btn-kakao-head .kakao-icon {
+    font-size: 1.2rem;
+    /* Reduced from 1.5rem */
+}
+
+.btn-kakao-head:hover {
+    background-color: #ffd600;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 214, 0, 0.3);
+}
+
+/* Curriculum Mixed Grid (1-2-2-2-2) */
+.curriculum-mixed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.curriculum-mixed-grid .track-card:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container .logo {
+        font-size: 1rem;
+        max-width: 130px;
+    }
+
+    .header-btn-group {
+        gap: 5px;
+    }
+
+    .btn-kakao-head {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        border-radius: 20px;
+    }
+
+    .btn-kakao-head .kakao-icon {
+        font-size: 1.2rem;
+    }
+
+    .kakao-text br {
+        display: none;
+        /* Try one line on mobile if space allows, or keep. User suggested 2 lines recommended. Let's keep 2 lines but maybe smaller font. */
+    }
+
+    /* Force Apply button to be compact */
+    .btn-primary.btn-apply-head {
+        padding: 0.4rem 1rem !important;
+        font-size: 0.9rem !important;
+        white-space: nowrap;
+    }
+
+    /* Curriculum Stack on Mobile */
+    .curriculum-mixed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Track Flow Enhancements */
+/* Track Flow Enhancements */
+.flow-step {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    border-left: 4px solid var(--primary-color);
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    /* Ensure centering works well for multi-line */
+    align-items: center;
+    justify-content: center;
+    min-height: 3.5rem;
+    /* Consistent height */
+}
+
+.flow-step:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-light);
+    border-left-color: var(--highlight-color);
+    /* Interactive pop */
+}
+
+.flow-arrow {
+    text-align: center;
+    color: #ccc;
+    font-weight: 800;
+    margin: 0.2rem 0;
+}
+
+/* Track 1: Foundation Grid Layout */
+.flow-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Branching Logic (OR) */
+.flow-branch-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.flow-branch-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flow-branch-label {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-light, #999);
+    margin: 0.3rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow-branch-label::before,
+.flow-branch-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    margin: 0 0.5rem;
+}
+
+/* Mobile Responsive for Flows */
+@media (max-width: 768px) {
+    .flow-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols on mobile for Foundation */
+    }
+
+    .flow-branch-container {
+        flex-direction: column;
+        /* Stack branches on mobile */
+        gap: 0.5rem;
+    }
+
+    .flow-branch-label::before,
+    .flow-branch-label::after {
+        display: none;
+        /* Hide lines on stack */
+    }
+
+    .flow-branch-label {
+        font-size: 0.9rem;
+        color: var(--highlight-color);
+        margin: 0.2rem 0;
+    }
 }

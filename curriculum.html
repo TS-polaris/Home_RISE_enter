@@ -62,7 +62,14 @@
                     <li><a href="faq.html">신청안내/FAQ</a></li>
                 </ul>
             </nav>
-            <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank" class="btn btn-primary">신청하기</a>
+            <div class="header-btn-group">
+                <a href="https://open.kakao.com/o/gPARyN4h" target="_blank" class="btn btn-kakao-head">
+                    <span class="kakao-icon">💬</span>
+                    <span class="kakao-text">카카오<br>오픈채팅방</span>
+                </a>
+                <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank"
+                    class="btn btn-primary btn-apply-head">신청하기</a>
+            </div>
         </div>
     </header>
 
@@ -78,7 +85,230 @@
     <section class="sub-content">
         <div class="container">
 
-            <!-- 1. Intro -->
+            <!-- 1. System Structure (Moved from pos 2) -->
+            <div class="system-structure-section" style="text-align: center; margin-bottom: 5rem;">
+                <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 2rem;">스마트모빌리티 융합전공 이수 체계</h3>
+                <div class="system-image-container"
+                    style="max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+                    <img src="assets/curriculum_structure.png" alt="스마트모빌리티 융합전공 이수 체계도"
+                        style="width: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- 2. Tracks (Moved from pos 3 & Reordered) -->
+            <div class="track-section">
+                <h3 class="section-title" style="text-align: center; font-size: 1.8rem; margin-bottom: 3rem;">9개
+                    마이크로디그리 트랙 <span
+                        style="font-size:1rem; color:#666; font-weight:400; display:block; margin-top:0.5rem;">(최대 3개
+                        선택)</span></h3>
+
+                <div class="track-grid curriculum-mixed-grid">
+                    <!-- Track 1: Basic (Grid Layout) -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">📚</span>
+                            <h3 class="track-title">스마트모빌리티 기초 마이크로디그리<br>
+                                <span
+                                    style="font-size: 0.8rem; color: #555; font-weight: 500; display: inline-block; margin-top: 5px;">(6개
+                                    과목 중 4개 과목 이수하면 '이수증' 수여)</span>
+                            </h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-grid-container">
+                                <div class="flow-step">모빌리티 제어공학 개론</div>
+                                <div class="flow-step">모빌리티 역학</div>
+                                <div class="flow-step">인공지능 로보틱스</div>
+                                <div class="flow-step">배리어프리 퍼스널모빌리티개론</div>
+                                <div class="flow-step">UAM 공학 개론</div>
+                                <div class="flow-step">미래모빌리티 프로그래밍</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 2: EV (Branching) -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🔋</span>
+                            <h3 class="track-title">전기자동차 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">모빌리티 제어공학 개론</div>
+                                <div class="flow-arrow">↓</div>
+
+                                <!-- Branch -->
+                                <div class="flow-branch-container">
+                                    <div class="flow-branch-item">
+                                        <div class="flow-step">친환경모빌리티 동역학 및 제어</div>
+                                    </div>
+                                    <div class="flow-branch-label">OR</div>
+                                    <div class="flow-branch-item">
+                                        <div class="flow-step">친환경전력전자</div>
+                                    </div>
+                                </div>
+
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">전기차구동 파워일렉트릭시스템</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">전기차구동 파워일렉트릭 시스템응용 및 설계</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 3: Mobility System (Branching) -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🚗</span>
+                            <h3 class="track-title">모빌리티시스템 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">모빌리티 역학</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">모빌리티 열유체</div>
+                                <div class="flow-arrow">↓</div>
+
+                                <!-- Branch -->
+                                <div class="flow-branch-container">
+                                    <div class="flow-branch-item">
+                                        <div class="flow-step">모빌리티 요소설계</div>
+                                    </div>
+                                    <div class="flow-branch-label">OR</div>
+                                    <div class="flow-branch-item">
+                                        <div class="flow-step">모빌리티 CAE</div>
+                                    </div>
+                                </div>
+
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">모빌리티 설계 및 생산·운용</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 4: Hydrogen -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🔧</span>
+                            <h3 class="track-title">수소차 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">스마트소재개론</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">모빌리티 에너지재료</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">친환경연료전지공학</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">친환경연료전지공학응용</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 5: Op Eval -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🚦</span>
+                            <h3 class="track-title">자율주행운영평가 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">모빌리티 제어공학 개론</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">자율주행모빌리티 동역학 및 제어</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">도시모빌리티 시뮬레이션</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">자율주행 시뮬레이션 응용</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 6: Robotics -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🚁</span>
+                            <h3 class="track-title">자율주행로보틱스 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">인공지능 로보틱스</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">자율주행 영상처리 및 딥러닝</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">자율주행시스템 제어 및 경로계획</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">지능형 모빌리티 시스템 설계</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 7: Barrier-free -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🛸</span>
+                            <h3 class="track-title">배리어프리 퍼스널모빌리티 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">배리어프리 퍼스널모빌리티개론</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">배리어프리 퍼스널모빌리티 설계 및 제어</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">배리어프리 퍼스널모빌리티 응용</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 8: UAM -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">✈️</span>
+                            <h3 class="track-title">UAM/드론 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">UAM 공학 개론</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">UAM/드론 임베디드 시스템개론</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">UAM/드론 응용 설계</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">UAM/드론 SW 기초</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 9: XR -->
+                    <div class="track-card">
+                        <div class="track-header">
+                            <span class="track-icon">🕶️</span>
+                            <h3 class="track-title">UAM/드론 XR 전문가 마이크로디그리</h3>
+                        </div>
+                        <div class="curriculum-flow">
+                            <h4>커리큘럼 구조</h4>
+                            <div class="flow-steps">
+                                <div class="flow-step">미래모빌리티 프로그래밍</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">미래모빌리티 고급 XR프로그래밍</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">미래모빌리티 WebXR</div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="flow-step">미래모빌리티 디지털트윈 기반 메타러닝 응용</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Intro (Moved from pos 1) -->
             <div class="sub-intro-container">
                 <h2 class="main-catchphrase">🧠 "배운 내용을 바로 실무에 적용하는 커리큘럼"</h2>
                 <h3 class="sub-catchphrase" style="color:#555; margin-bottom: 2rem;">이론만 배우는 수업은 이제 그만.<br>기업 현장에서 요구하는
@@ -107,378 +337,59 @@
                 </div>
             </div>
 
-            <!-- 1.5 System Structure -->
-            <div class="system-structure-section" style="text-align: center; margin-bottom: 5rem;">
-                <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 2rem;">스마트모빌리티 융합전공 이수 체계</h3>
-                <div class="system-image-container"
-                    style="max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
-                    <img src="assets/curriculum_structure.png" alt="스마트모빌리티 융합전공 이수 체계도"
-                        style="width: 100%; display: block;">
+            <!-- 4. Extracurricular (Moved from pos 4) -->
+            <div class="extra-section">
+                <div class="extra-header">
+                    <h3 class="extra-title">스마트모빌리티융합전공 비교과프로그램</h3>
+                    <p class="extra-subtitle">정규 수업 외에도 취업 경쟁력을 높이는 특별한 기회</p>
                 </div>
+
+                <div style="text-align: center;">
+                    <div class="partner-box">
+                        🤝 한국자동차연구원, KAIST, 한국생산기술원과 공유대학이 함께 교육합니다
+                    </div>
+                </div>
+
+                <div class="extra-grid">
+                    <!-- Prog 1 -->
+                    <div class="extra-card">
+                        <div class="extra-card-header">
+                            <span class="extra-name">인턴십 프로그램</span>
+                        </div>
+                        <div class="extra-body">
+                            학생들이 지역 모빌리티산업체 및 연구기관에서 직접 근무하며 현장 실무 경험과 직무역량을 강화하도록 지원
+                        </div>
+                    </div>
+
+                    <!-- Prog 2 -->
+                    <div class="extra-card">
+                        <div class="extra-card-header">
+                            <span class="extra-name">취·창업 프로그램</span>
+                        </div>
+                        <div class="extra-body">
+                            지속 가능한 지역 정주형 취업 활성화를 위한 취·창업 역량 강화 프로그램 (멘토링, 캠프 등)
+                        </div>
+                    </div>
+
+                    <!-- Prog 3 -->
+                    <div class="extra-card">
+                        <div class="extra-card-header">
+                            <span class="extra-name">지·산·학·연 연계</span>
+                        </div>
+                        <div class="extra-body">
+                            지역(地)-산업(産)-대학(學)-연구기관(研) 협력을 통한 지역 맞춤형 인재 양성 프로그램
+                        </div>
+                    </div>
+                </div>
+                <!-- Removed empty scroll-indicators div as it's not needed if not scrolling -->
             </div>
 
-            <!-- 2. Tracks -->
-            <div class="track-section">
-                <h3 class="section-title" style="text-align: center; font-size: 1.8rem; margin-bottom: 3rem;">9개
-                    마이크로디그리 트랙 <span
-                        style="font-size:1rem; color:#666; font-weight:400; display:block; margin-top:0.5rem;">(최대 3개
-                        선택)</span></h3>
+            <!-- Guide Section DELETED -->
 
-                <div class="track-grid">
-                    <!-- Track 1 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🔋</span>
-                            <h3 class="track-title">트랙 1: 전기자동차 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>현대차·기아차·르노삼성이 원하는 전기차 실무 역량</li>
-                                <li>배터리 관리 시스템, 전력 변환, 충전 인프라 설계</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>현대차, 기아, LG에너지솔루션, SK온, 포스코케미칼</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">모빌리티 제어공학 기초</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">친환경 모빌리티 동역학 및 제어</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">친환경전력전자</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">전기자동차 구동 파워일렉트릭 시스템</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">전기자동차 구동 파워일렉트릭 시스템 응용 및 설계</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 2 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🚗</span>
-                            <h3 class="track-title">트랙 2: 모빌리티 시스템 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>자율주행 관제 시스템, 실시간 모니터링, V2X 통신</li>
-                                <li>커넥티드카 시스템 설계</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>삼성전자, 현대모비스, 네이버랩스, 42dot</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">모빌리티 역학</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">모빌리티 열유체</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">모빌리티 CAE</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">모빌리티 설계 및 생산 응용</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 3 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🔧</span>
-                            <h3 class="track-title">트랙 3: 수소차 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>수소연료전지 시스템, 수소 저장·공급·안전 관리</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>현대차 넥쏘팀, SK E&S, 두산퓨얼셀</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">스마트수계개론</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">모빌리티 에너지제로</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">친환경 연료전지공학</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">친환경 연료전지공학 응용</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 4 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🚦</span>
-                            <h3 class="track-title">트랙 4: 자율주행 운영평가 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>자율주행 알고리즘 성능 평가, 안전성 테스트, 주행 데이터 분석</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>현대차 남양연구소, 42dot, 카카오모빌리티</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">자율주행 개론</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">주행 데이터 분석</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">자율주행 안전성 평가</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">자율주행 실증 프로젝트</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 5 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🚁</span>
-                            <h3 class="track-title">트랙 5: 자율주행 로보틱스 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>센서 융합, 경로 계획, 장애물 회피 알고리즘</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>쿠팡, 네이버, 우아한형제들, 배달로봇 스타트업</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">로봇공학 기초</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">센서 및 신호처리</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">자율주행 로봇 제어</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">자율주행 로봇 설계 및 제작</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 6 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🛸</span>
-                            <h3 class="track-title">트랙 6: 배터리&퍼스널 모빌리티 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>전기킥보드, 전동휠 BMS 및 안전 설계</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>킥고잉, 지바이크, 삼천리자전거</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">퍼스널 모빌리티 개론</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">배터리 시스템 기초</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">BMS 설계 및 제어</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">퍼스널 모빌리티 안전 설계</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 7 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">✈️</span>
-                            <h3 class="track-title">트랙 7: UAM/드론 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>도심항공교통(UAM) 비행 제어, 통신 시스템, 안전 관리</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>한화시스템, 현대차 수퍼널, SKT, KT</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">항공우주학 개론</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">비행 제어 시스템</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">UAM 통신 네트워크</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">드론/UAM 시스템 설계</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 8 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">🕶️</span>
-                            <h3 class="track-title">트랙 8: UAM/드론 XR 전문가</h3>
-                        </div>
-                        <div class="track-info">
-                            <h4>학습 내용</h4>
-                            <ul>
-                                <li>VR/AR/MR 기반 UAM·드론 시뮬레이션 개발</li>
-                            </ul>
-                            <h4>진출 분야</h4>
-                            <ul>
-                                <li>네이버제트, 메타, 유니티코리아</li>
-                            </ul>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">XR 기초 및 실습</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">시뮬레이션 가상환경 구축</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">UAM/드론 시뮬레이터 개발</div>
-                                <div class="flow-arrow">↓</div>
-                                <div class="flow-step">XR 기반 모빌리티 응용</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Track 9 -->
-                    <div class="track-card">
-                        <div class="track-header">
-                            <span class="track-icon">📚</span>
-                            <h3 class="track-title">트랙 9: 기초 마이크로디그리 과정</h3>
-                        </div>
-                        <div class="curriculum-flow">
-                            <h4>커리큘럼 구조</h4>
-                            <div class="flow-steps">
-                                <div class="flow-step">모빌리티 제어공학 개론</div>
-                                <div class="flow-step">모빌리티 역학</div>
-                                <div class="flow-step">스마트 소재개론</div>
-                                <div class="flow-step">모빌리티 제어공학 개론</div>
-                                <div class="flow-step">인공지능 로보틱스</div>
-                                <div class="flow-step">배리어프리 퍼스널모빌리티개론</div>
-                                <div class="flow-step">UAM 공학 개론</div>
-                                <div class="flow-step">미래모빌리티 프로그래밍</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- CTA -->
+            <div style="text-align: center; margin-top: 5rem;">
+                <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank" class="btn btn-cta">1분이면 지원 가능합니다</a>
             </div>
-
-        </div>
-        </div>
-
-        <div class="scroll-indicators"></div>
-        <!-- 2.5 Extracurricular Section -->
-        <div class="extra-section">
-            <div class="extra-header">
-                <h3 class="extra-title">스마트모빌리티융합전공 비교과프로그램</h3>
-                <p class="extra-subtitle">정규 수업 외에도 취업 경쟁력을 높이는 특별한 기회</p>
-            </div>
-
-            <div style="text-align: center;">
-                <div class="partner-box">
-                    🤝 한국자동차연구원, KAIST, 한국생산기술원과 공유대학이 함께 교육합니다
-                </div>
-            </div>
-
-            <div class="extra-grid">
-                <!-- Prog 1 -->
-                <div class="extra-card">
-                    <div class="extra-card-header">
-                        <span class="extra-name">인턴십 프로그램</span>
-                    </div>
-                    <div class="extra-body">
-                        학생들이 지역 모빌리티산업체 및 연구기관에서 직접 근무하며 현장 실무 경험과 직무역량을 강화하도록 지원
-                    </div>
-                </div>
-
-                <!-- Prog 2 -->
-                <div class="extra-card">
-                    <div class="extra-card-header">
-                        <span class="extra-name">취·창업 프로그램</span>
-                    </div>
-                    <div class="extra-body">
-                        지속 가능한 지역 정주형 취업 활성화를 위한 취·창업 역량 강화 프로그램 (멘토링, 캠프 등)
-                    </div>
-                </div>
-
-                <!-- Prog 3 -->
-                <div class="extra-card">
-                    <div class="extra-card-header">
-                        <span class="extra-name">지·산·학·연 연계</span>
-                    </div>
-                    <div class="extra-body">
-                        지역(地)-산업(産)-대학(學)-연구기관(研) 협력을 통한 지역 맞춤형 인재 양성 프로그램
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicators"></div>
-        </div>
-
-        <!-- 3. Guide -->
-        <div class="guide-section">
-            <h3 class="section-title" style="text-align: center; font-size: 1.8rem; margin-bottom: 2rem;">마이크로디그리
-                선택 가이드</h3>
-            <div class="guide-qa">
-                <div class="qa-box">
-                    <strong>기초과정 MD</strong>
-                    <p>모빌리티 제어공학기초, 모빌리티역학, 인공지능 로보틱스, 배리어프리, UAM 공학개론, 미래모빌리티 등<br>
-                        → <span style="background:#e3f2fd; padding:2px 8px; border-radius:4px; font-weight:600;">총 8개 과목
-                            중 4과목 이수시 인정</span></p>
-                </div>
-                <div class="qa-box">
-                    <strong>전기자동차전문가 MD</strong>
-                    <p>• 모빌리티 제어공학기초 (필수)<br>
-                        • 친환경 모빌리티 동역학 및 제어 or 친환경 전력전자 (택 1)<br>
-                        • 파워일렉트릭 시스템 (필수)<br>
-                        • 전기차 구동 파워일렉트릭 시스템 응용 및 설계 (필수)<br>
-                        → <span style="background:#e3f2fd; padding:2px 8px; border-radius:4px; font-weight:600;">총 5개 과목
-                            중 4과목 이수시 인정</span></p>
-                </div>
-                <div class="qa-box">
-                    <strong>모빌리티시스템전문가 MD</strong>
-                    <p>• 모빌리티 역학 (필수)<br>
-                        • 모빌리티 열유체 (필수)<br>
-                        • 모빌리티 요소설계 or 모빌리티 CAE (택 1)<br>
-                        • 모빌리티 설계 및 생산응용 (필수)<br>
-                        → <span style="background:#e3f2fd; padding:2px 8px; border-radius:4px; font-weight:600;">총 5개 과목
-                            중 4과목 이수시 인정</span></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 4. CTA -->
-        <div style="text-align: center; margin-top: 5rem;">
-            <a href="https://forms.gle/E8zWNuWejBLnbvW99" target="_blank" class="btn btn-cta">1분이면 지원 가능합니다</a>
-        </div>
 
         </div>
     </section>
