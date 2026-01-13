@@ -2826,8 +2826,8 @@ header .btn {
 /* Mobile Responsive for Flows */
 @media (max-width: 768px) {
     .flow-grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 cols on mobile for Foundation */
+        grid-template-columns: 1fr;
+        /* Stack to 1 column on mobile for equal width and readability */
     }
 
     .flow-branch-container {
